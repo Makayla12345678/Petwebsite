@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Shelter — PetWeb</title>
+  <meta name="description" content="Search local animal shelters near you. Find contact information, location, and available animals.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">📍 Directory</p>
+      <h1>Find a Local Shelter</h1>
+      <p>Search shelters near you and get in touch directly.</p>
+      <div class="search-bar">
+        <input type="text" id="shelter-search" class="search-input" placeholder="🔍  Search by name or city...">
+        <button class="btn-pill" onclick="document.getElementById('shelter-search').dispatchEvent(new Event('input'))">Search</button>
+      </div>
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all">All Animals</button>
+        <button class="filter-pill" data-filter="dogs">Dogs</button>
+        <button class="filter-pill" data-filter="cats">Cats</button>
+        <button class="filter-pill" data-filter="small-animals">Small Animals</button>
+      </div>
+    </section>
+
+    <div id="shelters-list" class="shelters-list"></div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/shelters.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/shelters.js"></script>
+</body>
+</html>
