@@ -103,7 +103,10 @@ let activeFilters = {
 
 function filterVets() {
   return VETS.filter(v => {
-    if (activeFilters.rating !== 'all' && v.rating < parseFloat(activeFilters.rating)) return false;
+    if (activeFilters.rating !== 'all') {
+      const threshold = parseFloat(activeFilters.rating);
+      if (!isNaN(threshold) && v.rating < threshold) return false;
+    }
     if (activeFilters.neighbourhood !== 'all' && v.neighbourhood !== activeFilters.neighbourhood) return false;
     if (activeFilters.animals.length > 0) {
       if (!activeFilters.animals.every(a => v.animals.includes(a))) return false;
@@ -161,7 +164,7 @@ function makeChip(label, value, filterKey, isActive) {
 }
 
 function buildFilterPanel() {
-  const neighbourhoods = [...new Set(VETS.map(v => v.neighbourhood))];
+  const neighbourhoods = [...new Set(VETS.map(v => v.neighbourhood))].sort();
   const panel = document.getElementById('vet-filter-panel');
   if (!panel) return;
 
@@ -203,12 +206,13 @@ function buildFilterPanel() {
 }
 
 function wireFilterChips() {
+  const datasetKey = { rating: 'filterRating', neighbourhood: 'filterNeighbourhood', emergency: 'filterEmergency' };
   ['rating', 'neighbourhood', 'emergency'].forEach(key => {
     document.querySelectorAll(`[data-filter-${key}]`).forEach(chip => {
       chip.addEventListener('click', function() {
         document.querySelectorAll(`[data-filter-${key}]`).forEach(c => c.classList.remove('active'));
         this.classList.add('active');
-        activeFilters[key] = this.dataset[`filter${key.charAt(0).toUpperCase()}${key.slice(1)}`];
+        activeFilters[key] = this.dataset[datasetKey[key]];
         applyFilters();
       });
     });
@@ -220,6 +224,12 @@ function wireFilterChips() {
       activeFilters.animals = [...document.querySelectorAll('[data-filter-animal].active')]
         .map(el => el.dataset.filterAnimal);
       applyFilters();
+    });
+  });
+
+  document.querySelectorAll('#vet-filter-panel .vet-chip').forEach(chip => {
+    chip.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); chip.click(); }
     });
   });
 
@@ -255,16 +265,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('vet-filter-toggle');
   const panel = document.getElementById('vet-filter-panel');
   if (toggleBtn && panel) {
+    panel.hidden = true;
+    toggleBtn.setAttribute('aria-expanded', 'false');
+
     toggleBtn.addEventListener('click', e => {
       e.stopPropagation();
       const isOpen = !panel.hidden;
       panel.hidden = isOpen;
       toggleBtn.setAttribute('aria-expanded', String(!isOpen));
     });
-    document.addEventListener('click', () => {
+
+    const closePanel = () => {
       panel.hidden = true;
       toggleBtn.setAttribute('aria-expanded', 'false');
-    });
+    };
+    document.addEventListener('click', closePanel);
     panel.addEventListener('click', e => e.stopPropagation());
   }
 });
