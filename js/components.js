@@ -104,6 +104,7 @@ const NAV_HTML = `
     <a href="shelters.html">Shelters</a>
     <a href="adoption.html">Adoption</a>
     <a href="vet-services.html">Vet Services</a>
+    <a href="grooming.html">Grooming</a>
     <div class="nav-dropdown">
       <button class="nav-dropdown-toggle">More &#9660;</button>
       <div class="nav-dropdown-menu">
