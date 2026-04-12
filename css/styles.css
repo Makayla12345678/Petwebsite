@@ -611,8 +611,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   color: var(--color-muted);
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
+  font-size: 2.5rem;
   flex-shrink: 0;
 }
 .vet-card__body {
@@ -678,6 +677,60 @@ h1, h2, h3, h4 {
 .vet-card__review-count {
   font-size: 0.78rem;
   color: var(--color-muted);
+}
+.vet-card__book-btn {
+  margin-left: auto;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.vet-card__book-btn:hover {
+  background: var(--color-secondary);
+  box-shadow: 0 2px 6px rgba(93,109,158,0.25);
+}
+
+/* =====================
+   CARD IMAGE + ATTRIBUTION
+   ===================== */
+.card-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  background: var(--color-cream);
+  margin: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.img-source {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.45);
+  padding: 2px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* No-results message */

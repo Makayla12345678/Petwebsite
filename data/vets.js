@@ -7,7 +7,10 @@ const VETS = [
     emergency: true,
     rating: 4.9,
     reviews: 312,
-    tagline: "Compassionate, full-service care steps from the lake."
+    tagline: "Compassionate, full-service care steps from the lake.",
+    website: "https://beachesanimalhospital.com",
+    image: "https://beachesanimalhospital.com/wp-content/uploads/2016/11/2.jpg",
+    imageSource: "Beaches Animal Hospital"
   },
   {
     name: "Yonge-Eglinton Animal Hospital",
@@ -17,7 +20,10 @@ const VETS = [
     emergency: false,
     rating: 4.8,
     reviews: 241,
-    tagline: "Trusted midtown care for cats, dogs, and exotic companions."
+    tagline: "Trusted midtown care for cats, dogs, and exotic companions.",
+    website: "https://www.yongestreetanimalhospital.ca",
+    image: "https://www.yongestreetanimalhospital.ca/images/clinic_office.jpg",
+    imageSource: "Yonge Street Animal Hospital"
   },
   {
     name: "Downtown Animal Hospital",
@@ -27,7 +33,10 @@ const VETS = [
     emergency: true,
     rating: 4.8,
     reviews: 198,
-    tagline: "24-hour emergency and preventive care in the heart of the city."
+    tagline: "24-hour emergency and preventive care in the heart of the city.",
+    website: "https://vcacanada.com/downtown",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/04/Dog_and_cat.jpg",
+    imageSource: "Wikimedia Commons"
   },
   {
     name: "North York Vet Group",
@@ -37,7 +46,10 @@ const VETS = [
     emergency: true,
     rating: 4.7,
     reviews: 175,
-    tagline: "Comprehensive care for dogs, cats, birds, and reptiles."
+    tagline: "Comprehensive care for dogs, cats, birds, and reptiles.",
+    website: "https://www.northyorkveterinaryclinic.com",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Sapphire-rumped_parrotlet_%28Touit_purpuratus%29.jpg",
+    imageSource: "Wikimedia Commons"
   },
   {
     name: "Oakville Veterinary Centre",
@@ -47,7 +59,10 @@ const VETS = [
     emergency: true,
     rating: 4.7,
     reviews: 163,
-    tagline: "Expert family vet care serving Oakville and Burlington."
+    tagline: "Expert family vet care serving Oakville and Burlington.",
+    website: "https://www.speersroadanimalhospital.com",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Dobby_a_pet_rabbit.JPG",
+    imageSource: "Wikimedia Commons"
   },
   {
     name: "Etobicoke Pet Hospital",
@@ -57,7 +72,10 @@ const VETS = [
     emergency: false,
     rating: 4.7,
     reviews: 144,
-    tagline: "Friendly, affordable vet care on the Queensway."
+    tagline: "Friendly, affordable vet care on the Queensway.",
+    website: "https://southetobicokeanimalhospital.ca",
+    image: "https://southetobicokeanimalhospital.ca/wp-content/uploads/2025/10/lcp.webp",
+    imageSource: "South Etobicoke Animal Hospital"
   },
   {
     name: "Markham Village Animal Hospital",
@@ -67,7 +85,10 @@ const VETS = [
     emergency: true,
     rating: 4.6,
     reviews: 132,
-    tagline: "Serving Markham families and their pets for over 20 years."
+    tagline: "Serving Markham families and their pets for over 20 years.",
+    website: "https://villageanimalclinic.ca",
+    image: "http://villageanimalclinic.ca/wp-content/uploads/2025/02/vet-clinic-markham.jpg",
+    imageSource: "Village Animal Clinic"
   },
   {
     name: "East York Pet Care",
@@ -77,7 +98,10 @@ const VETS = [
     emergency: true,
     rating: 4.6,
     reviews: 119,
-    tagline: "Warm, community-focused care on the Danforth."
+    tagline: "Warm, community-focused care on the Danforth.",
+    website: "https://danforthveterinaryclinic.ca",
+    image: "https://danforthveterinaryclinic.ca/wp-content/uploads/danforth-veterinary-clinic-east-york-exterior.jpg",
+    imageSource: "Danforth Veterinary Clinic"
   },
   {
     name: "North York Vet Group — Brampton",
@@ -87,7 +111,10 @@ const VETS = [
     emergency: false,
     rating: 4.6,
     reviews: 108,
-    tagline: "Convenient, caring vet services for Brampton pet owners."
+    tagline: "Convenient, caring vet services for Brampton pet owners.",
+    website: "https://bramptonvethospital.com",
+    image: "https://cdcssl.ibsrv.net/ibimg/smb/3000x1681_80/webmgr/0c/j/7/images/banner001.jpg.webp",
+    imageSource: "Brampton Veterinary Hospital"
   },
   {
     name: "Mississauga West Animal Hospital",
@@ -97,7 +124,10 @@ const VETS = [
     emergency: false,
     rating: 4.5,
     reviews: 97,
-    tagline: "Quality preventive and wellness care in west Mississauga."
+    tagline: "Quality preventive and wellness care in west Mississauga.",
+    website: "https://www.hurontariovet.ca",
+    image: "https://www.hurontariovet.ca/wp-content/uploads/DSC0691.jpg",
+    imageSource: "Hurontario Veterinary Hospital"
   },
   {
     name: "Richmond Hill Animal Hospital",
@@ -107,17 +137,23 @@ const VETS = [
     emergency: false,
     rating: 4.5,
     reviews: 89,
-    tagline: "Full-service care for the whole family — fur, feathers, and scales."
+    tagline: "Full-service care for the whole family — fur, feathers, and scales.",
+    website: "https://vcacanada.com/richmondhill",
+    image: "https://cvwebdvm.com/bayviewsevenah/wp-content/uploads/sites/537/2016/05/cat-and-dog-slide.jpg",
+    imageSource: "Bayview Seven Animal Hospital"
   },
   {
-    name: "Scarborough Animal Clinic",
+    name: "Scarborough Animal Hospital",
     neighbourhood: "Scarborough",
     address: "3050 Lawrence Ave E, Scarborough, ON",
     animals: ["dogs", "cats", "reptiles", "small-mammals"],
     emergency: false,
     rating: 4.5,
     reviews: 82,
-    tagline: "Affordable, attentive care for east-end pet owners."
+    tagline: "Affordable, attentive care for east-end pet owners.",
+    website: "https://vcacanada.com/scarborough",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
+    imageSource: "Wikimedia Commons"
   },
   {
     name: "Thornhill Veterinary Clinic",
@@ -127,7 +163,10 @@ const VETS = [
     emergency: true,
     rating: 4.4,
     reviews: 74,
-    tagline: "Five-species expertise with emergency services available."
+    tagline: "Five-species expertise with emergency services available.",
+    website: "https://www.thornhillvetclinic.com",
+    image: "https://d207pkrvhz1w8t.cloudfront.net/slider-image-17892-full-cropped.jpg",
+    imageSource: "Thornhill Veterinary Clinic"
   },
   {
     name: "Ajax Animal Hospital",
@@ -137,7 +176,10 @@ const VETS = [
     emergency: false,
     rating: 4.4,
     reviews: 61,
-    tagline: "Friendly neighbourhood care for Durham Region pets."
+    tagline: "Friendly neighbourhood care for Durham Region pets.",
+    website: "https://www.ajaxanimalhospital.com/en-ca",
+    image: "https://weu-az-web-ca-cdn.azureedge.net/mediacontainer/medialibraries/ajaxanimalhospital/images/hospital-tour/reception.jpg?ext=.jpg",
+    imageSource: "Ajax Animal Hospital"
   },
   {
     name: "Pickering Pet Hospital",
@@ -147,6 +189,9 @@ const VETS = [
     emergency: true,
     rating: 4.3,
     reviews: 53,
-    tagline: "24-hour emergency care serving Pickering and Ajax."
+    tagline: "24-hour emergency care serving Pickering and Ajax.",
+    website: "https://pickeringanimalhospital.ca",
+    image: "https://pickeringanimalhospital.ca/wp-content/uploads/2025/05/pickering-new-banner.png",
+    imageSource: "Pickering Animal Hospital"
   }
 ];
