@@ -50,7 +50,7 @@ function buildCard(item, config) {
       ${item.image
         ? `<figure class="card-img">
              <img src="${item.image}" alt="${item.name}" loading="lazy">
-             <figcaption class="img-source">${item.imageSource}</figcaption>
+             ${item.imageSource ? `<figcaption class="img-source">${item.imageSource}</figcaption>` : ""}
            </figure>`
         : `<div class="${cardClass}__photo">🐾</div>`
       }
@@ -62,9 +62,9 @@ function buildCard(item, config) {
         ${item[badgeField] ? `<p class="${cardClass}__badge">${badgeText}</p>` : ''}
       </div>
       <div class="${cardClass}__rating">
-        <span class="${cardClass}__score">${item.rating.toFixed(1)}</span>
+        <span class="${cardClass}__score">${item.rating != null ? item.rating.toFixed(1) : 'N/A'}</span>
         ${buildStars(item.rating, `${cardClass}__stars`)}
-        <span class="${cardClass}__review-count">(${item.reviews.toLocaleString()} reviews)</span>
+        ${item.reviews != null ? `<span class="${cardClass}__review-count">(${item.reviews.toLocaleString()} reviews)</span>` : ""}
         ${item.website
           ? `<a href="${item.website}" class="${cardClass}__book-btn" target="_blank" rel="noopener noreferrer">${bookBtnLabel}</a>`
           : ''}
@@ -89,7 +89,7 @@ function renderFeaturedBanner(data, config) {
     <div class="${bannerClass}__left">
       <span class="${bannerClass}__badge">${badgeText}</span>
       <h2 class="${bannerClass}__name">${item.name}</h2>
-      <p class="${bannerClass}__tagline">${item.tagline}</p>
+      ${item.tagline ? `<p class="${bannerClass}__tagline">${item.tagline}</p>` : ""}
     </div>
     <div class="${bannerClass}__right">
       <span class="${bannerClass}__score">${item.rating.toFixed(1)}</span>
