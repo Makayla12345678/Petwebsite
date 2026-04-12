@@ -1,3 +1,5 @@
+(function() {
+
 /* =====================
    HELPERS
    ===================== */
@@ -235,3 +237,5 @@ document.addEventListener('DOMContentLoaded', () => {
     panel.addEventListener('click', e => e.stopPropagation());
   }
 });
+
+})();
