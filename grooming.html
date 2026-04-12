@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Grooming — PetWeb</title>
+  <meta name="description" content="Find the best pet groomers in the GTA. Browse top-rated grooming salons for your dog or cat.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">✂️ Grooming</p>
+      <h1>Pet Grooming</h1>
+      <p>Keep your pet looking and feeling their best. Here are the top-rated groomers across the GTA.</p>
+    </section>
+
+    <div id="groomer-featured-banner" class="groomer-featured-banner"></div>
+
+    <section class="section section--cream">
+      <div class="groomer-listings-header">
+        <div>
+          <p class="label">GTA Groomer Directory</p>
+          <h2 class="groomer-listings-title">Top-Rated Groomers Near You</h2>
+        </div>
+        <div class="vet-filter-wrapper">
+          <button id="groomer-filter-toggle" class="btn-pill vet-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="groomer-filter-panel" class="vet-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="groomer-active-chips" class="vet-active-chips"></div>
+
+      <div id="groomers-list" class="groomers-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/groomers.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/groomers.js"></script>
+</body>
+</html>
