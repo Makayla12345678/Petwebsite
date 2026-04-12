@@ -101,8 +101,6 @@ const NAV_HTML = `
 <nav class="nav">
   <a href="index.html" class="nav-logo">🐾 PetWeb</a>
   <div class="nav-links">
-    <a href="shelters.html">Shelters</a>
-    <a href="adoption.html">Adoption</a>
     <a href="vet-services.html">Vet Services</a>
     <a href="grooming.html">Grooming</a>
     <div class="nav-dropdown">
@@ -114,7 +112,7 @@ const NAV_HTML = `
         <a href="products.html">Products</a>
       </div>
     </div>
-    <a href="shelters.html" class="btn-pill nav-cta">Find a Shelter</a>
+    <a href="vet-services.html" class="btn-pill nav-cta">Find a Vet</a>
   </div>
   <button class="nav-hamburger" aria-label="Open menu">&#9776;</button>
 </nav>
