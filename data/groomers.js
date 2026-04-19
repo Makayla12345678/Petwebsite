@@ -10,8 +10,8 @@ const GROOMERS = [
     reviews: 187,
     tagline: "Award-winning Mississauga grooming salon known for hand-stripping and anxiety-friendly care.",
     website: "https://pawbasic.com",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Dobby_a_pet_rabbit.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "https://pawbasic.com/wp-content/uploads/2026/04/pawbasic-pet-grooming-mississauga-062.jpg",
+    imageSource: "PawBasic"
   },
   {
     name: "My Dog Spot Pet Grooming",
@@ -38,8 +38,8 @@ const GROOMERS = [
     reviews: 112,
     tagline: "One-on-one certified grooming for dogs and cats, minutes from Eglinton Station.",
     website: "https://www.petvillespa.com",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "https://www.petvillespa.com/hero-labradoodle-portrait.png",
+    imageSource: "PetVille Spa"
   },
   {
     name: "Top Dogs Pet Grooming Salon",
@@ -94,8 +94,8 @@ const GROOMERS = [
     reviews: 133,
     tagline: "The Beach's premier full-service grooming salon and DIY dog wash, steps from the lake.",
     website: "https://www.pawsinthebath.com",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/26/YellowLabradorLooking_new.jpg",
-    imageSource: "Wikimedia Commons"
+    image: "https://lirp.cdn-website.com/4cc18255/dms3rep/multi/opt/2022dog-gallery12-300x300+1-1920w.png",
+    imageSource: "Paws In The Bath"
   },
   {
     name: "Hello Pets Inc.",
@@ -108,8 +108,8 @@ const GROOMERS = [
     reviews: 119,
     tagline: "Full-service pet grooming, daycare, and boarding in the heart of North York.",
     website: "https://hellopetsinc.com",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg",
-    imageSource: "Wikimedia Commons"
+    image: "https://hellopetsinc.com/wp-content/uploads/2024/07/hero_image_01.png",
+    imageSource: "Hello Pets Inc."
   },
   {
     name: "Fab 'n Furry Pet Spa",
@@ -136,8 +136,8 @@ const GROOMERS = [
     reviews: 225,
     tagline: "Operating since 1990, Pickering's most trusted all-breed salon with premium products and skilled groomers.",
     website: "https://pawprintsdogsalon.ca",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Dobby_a_pet_rabbit.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "https://pawprintsdogsalon.ca/images/upload/slide1.jpg",
+    imageSource: "Pawprints Dog Salon"
   },
   {
     name: "Dogfather & Co.",
@@ -164,7 +164,7 @@ const GROOMERS = [
     reviews: 164,
     tagline: "Oakville's trusted dog and cat grooming salon since 1981, serving Burlington and Mississauga too.",
     website: "https://www.doggiedipandclip.net",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Dobby_a_pet_rabbit.JPG",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
     imageSource: "Wikimedia Commons"
   },
   {
