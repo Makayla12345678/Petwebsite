@@ -14,18 +14,18 @@ const GROOMERS = [
     imageSource: "PawBasic"
   },
   {
-    name: "Four Paws Inc.",
-    neighbourhood: "East York",
-    address: "2785 St Clair Ave E, Toronto, ON M4B 1N1",
-    pets: ["dogs"],
+    name: "Pawfect Spa",
+    neighbourhood: "St. Clair West",
+    address: "551 St Clair Ave W, Toronto, ON M6C 1A3",
+    pets: ["dogs", "cats"],
     services: ["bath-brush", "haircut", "nail-trim", "de-shedding"],
     mobile: false,
     rating: 4.8,
-    reviews: 66,
-    tagline: "Certified East York grooming salon established in 2006, known for safe, loving one-on-one care for dogs of all breeds.",
-    website: "https://fourpawsinc.ca",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
-    imageSource: "Wikimedia Commons"
+    reviews: 163,
+    tagline: "Award-winning Toronto grooming spa run by a Certified Master Groomer with 20 years of experience, specializing in hand-scissored breed-specific styling.",
+    website: "https://pawfectspa.com",
+    image: "https://pawfectspa.com/wp-content/uploads/2024/10/Dog-Salon-img.png",
+    imageSource: "Pawfect Spa"
   },
   {
     name: "PetVille Spa",
@@ -52,8 +52,8 @@ const GROOMERS = [
     reviews: 112,
     tagline: "Multi-award-winning Etobicoke grooming salon on Lake Shore, named Pet Grooming Salon of the Year two years running.",
     website: "https://booboopetgroomingservices.ca",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
-    imageSource: "Wikimedia Commons"
+    image: "images/Grooming/Booboopetgrooming.png",
+    imageSource: "BooBoo Pet Grooming Services"
   },
   {
     name: "C&D Pet Studio",
@@ -80,8 +80,8 @@ const GROOMERS = [
     reviews: 65,
     tagline: "Award-winning Markham cage-free spa voted Best Groomer seven years running, where pets roam and relax between sessions.",
     website: "https://poochiesparadise.ca",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "https://poochiesparadise.ca/wp-content/uploads/2016/07/poochies.jpg",
+    imageSource: "Poochies Paradise Spa"
   },
   {
     name: "Pets N Groom",
@@ -94,8 +94,8 @@ const GROOMERS = [
     reviews: 1005,
     tagline: "Family-owned Burlington grooming institution since 1996, with over a thousand five-star reviews and eco-friendly, chemical-free shampoos.",
     website: "https://petsngroom.com",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "images/Grooming/Petsngroom.png",
+    imageSource: "Pets N Groom"
   },
   {
     name: "Paws In The Bath",
@@ -136,8 +136,8 @@ const GROOMERS = [
     reviews: 279,
     tagline: "Richmond Hill's top-rated grooming and daycare salon on Bathurst Street, loved for attentive, breed-savvy care.",
     website: "https://dogplus.ca",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "https://dogplus.ca/wp-content/uploads/2024/01/Dog-Grooming-Muttz-with-Mannerz-Stouffville-Markham-1024x963.jpg",
+    imageSource: "Dog+"
   },
   {
     name: "Pawz N' Style",
@@ -192,8 +192,8 @@ const GROOMERS = [
     reviews: 42,
     tagline: "Yorkville's favourite canine boutique and grooming studio, where every dog gets the star treatment.",
     website: "https://dogfatherandco.com",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Golden_Retriever_Hund_Dog.JPG",
-    imageSource: "Wikimedia Commons"
+    image: "images/Grooming/Dogfatherandco.png",
+    imageSource: "Dogfather & Co."
   },
   {
     name: "Fluffy Pets Spa & Grooming",
