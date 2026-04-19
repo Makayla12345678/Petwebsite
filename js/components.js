@@ -121,7 +121,7 @@ const NAV_HTML = `
 const FOOTER_HTML = `
 <footer class="footer">
   <a href="index.html" class="footer-logo">🐾 PetWeb</a>
-  <p class="footer-copy">&#169; 2024 PetWeb &middot; Made with love for animals</p>
+  <p class="footer-copy">&#169; 2026 PetWeb &middot; Made with love for animals</p>
   <div class="footer-links">
     <a href="#">Privacy</a>
     <a href="#">Contact</a>
