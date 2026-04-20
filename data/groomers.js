@@ -14,6 +14,20 @@ const GROOMERS = [
     imageSource: "PawBasic"
   },
   {
+    name: "Dirty Pawz Dog Wash",
+    neighbourhood: "Riverside",
+    address: "804 Queen Street East, Toronto, ON M4M 1H7",
+    pets: ["dogs"],
+    services: ["bath-brush", "haircut", "nail-trim"],
+    mobile: false,
+    rating: 4.9,
+    reviews: 236,
+    tagline: "Toronto's most convenient dog wash and grooming studio, offering self-serve stations and professional grooming with vet-approved, naturally derived products — open daily 8am to 9pm.",
+    website: "https://www.dirtypawzdogwash.com",
+    image: "",
+    imageSource: "Dirty Pawz Dog Wash"
+  },
+  {
     name: "Pawfect Spa",
     neighbourhood: "St. Clair West",
     address: "551 St Clair Ave W, Toronto, ON M6C 1A3",
@@ -140,20 +154,6 @@ const GROOMERS = [
     imageSource: "Dog+"
   },
   {
-    name: "Pawz N' Style",
-    neighbourhood: "Thornhill",
-    address: "79 Green Lane, Thornhill, ON L3T 6K6",
-    pets: ["dogs"],
-    services: ["bath-brush", "haircut", "nail-trim"],
-    mobile: false,
-    rating: 4.7,
-    reviews: 38,
-    tagline: "Award-winning Thornhill grooming spa where certified groomer Anchalee delivers custom breed-specific styling in a calm, open environment.",
-    website: "https://www.pawznstyle.com",
-    image: "images/Grooming/Pawznstyle.png",
-    imageSource: "Pawz N' Style"
-  },
-  {
     name: "Yuppy Puppy Spa",
     neighbourhood: "Markham",
     address: "78 Barnstone Dr, Markham, ON L6E 0L9",
@@ -171,7 +171,7 @@ const GROOMERS = [
     name: "Pawprints Dog Salon",
     neighbourhood: "Pickering",
     address: "1735 Bayly St, Unit 19, Pickering, ON L1W 3G7",
-    pets: ["dogs", "cats"],
+    pets: ["dogs"],
     services: ["bath-brush", "haircut", "nail-trim", "de-shedding"],
     mobile: false,
     rating: 4.6,
@@ -183,9 +183,9 @@ const GROOMERS = [
   },
   {
     name: "Dogfather & Co.",
-    neighbourhood: "Downtown Core",
+    neighbourhood: "Yorkville",
     address: "179 Avenue Rd, Toronto, ON M5R 2J2",
-    pets: ["dogs"],
+    pets: ["dogs", "cats"],
     services: ["bath-brush", "haircut", "nail-trim", "teeth-brushing"],
     mobile: false,
     rating: 4.6,
