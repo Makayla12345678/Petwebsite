@@ -948,6 +948,320 @@ h1, h2, h3, h4 {
 }
 
 /* =====================
+   DOG PARK DIRECTORY
+   ===================== */
+
+/* Featured banner */
+.dp-featured-banner {
+  background: var(--color-secondary);
+  padding: 1.6rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.dp-featured-banner__badge {
+  display: inline-block;
+  background: var(--color-pink);
+  color: var(--color-primary);
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.dp-featured-banner__name {
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.dp-featured-banner__tagline {
+  color: rgba(250,248,243,0.75);
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+}
+.dp-featured-banner__right {
+  text-align: center;
+  flex-shrink: 0;
+}
+.dp-featured-banner__score {
+  display: block;
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.dp-featured-banner__stars {
+  display: block;
+  color: var(--color-pink);
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+/* Spotlight (Top 3) section */
+.dp-spotlight-section { background: #fff; }
+.dp-spotlight-label { color: var(--color-primary); margin-bottom: 0.4rem; }
+.dp-spotlight-title {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+.dp-spotlight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+.dp-spotlight-card {
+  background: var(--color-cream);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+}
+.dp-spotlight-card__img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.dp-spotlight-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.dp-spotlight-card__img-placeholder {
+  aspect-ratio: 4 / 3;
+  background: var(--color-card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.dp-spotlight-card__rank {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.18rem 0.6rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.dp-spotlight-card__rank--1 { background: #C8952A; }
+.dp-spotlight-card__rank--2,
+.dp-spotlight-card__rank--3 { background: var(--color-secondary); }
+.dp-spotlight-card__body {
+  padding: 1rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dp-spotlight-card__name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+.dp-spotlight-card__meta {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+.dp-spotlight-card__address {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+.dp-spotlight-card__tagline {
+  font-size: 0.83rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 0.7rem;
+  flex: 1;
+}
+.dp-spotlight-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+.dp-spotlight-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px solid var(--color-card-border);
+  padding-top: 0.6rem;
+}
+.dp-spotlight-card__score {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+.dp-spotlight-card__stars { color: #C8952A; font-size: 0.9rem; }
+.dp-spotlight-card__reviews { font-size: 0.75rem; color: var(--color-muted); }
+
+/* Listings header */
+.dp-listings-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.dp-listings-title {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+/* Filter button + panel */
+.dp-filter-wrapper { position: relative; }
+.dp-filter-btn { white-space: nowrap; }
+.dp-filter-panel {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  box-shadow: 0 4px 16px rgba(93,109,158,0.14);
+  padding: 1.2rem;
+  min-width: 290px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Active chips */
+.dp-active-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Card list */
+.dog-parks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Individual dog park card */
+.dog-park-card {
+  background: #fff;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.dog-park-card__photo {
+  background: var(--color-card-border);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+.dog-park-card__body {
+  padding: 1.2rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.dog-park-card__name {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+.dog-park-card__address {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+.dog-park-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+.dog-park-card__tag {
+  background: var(--color-pink);
+  color: var(--color-primary);
+  border: 1px solid var(--color-pink-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  font-family: var(--font-sans);
+}
+.dog-park-card__rating {
+  border-top: 1px solid var(--color-card-border);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.dog-park-card__score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  line-height: 1;
+}
+.dog-park-card__stars {
+  color: #C8952A;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+.dog-park-card__review-count {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+.dog-park-card__book-btn {
+  margin-left: auto;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.dog-park-card__book-btn:hover {
+  background: var(--color-secondary);
+  box-shadow: 0 2px 6px rgba(93,109,158,0.25);
+}
+
+/* No-results message */
+.dp-no-results {
+  text-align: center;
+  color: var(--color-muted);
+  padding: 3rem;
+  font-size: 0.95rem;
+}
+
+/* =====================
    PRODUCTS PAGE
    ===================== */
 .products-grid {
@@ -1024,6 +1338,13 @@ h1, h2, h3, h4 {
   .groomer-featured-banner__right { text-align: left; }
   .groomer-listings-header { flex-direction: column; gap: 0.8rem; }
   .groomer-card__photo { height: 140px; }
+
+  .dp-featured-banner { flex-direction: column; gap: 0.8rem; padding: 1.2rem 1.5rem; }
+  .dp-featured-banner__right { text-align: left; }
+  .dp-listings-header { flex-direction: column; gap: 0.8rem; }
+  .dp-filter-panel { position: fixed; top: auto; bottom: 0; left: 0; right: 0; border-radius: var(--radius-card) var(--radius-card) 0 0; min-width: unset; }
+  .dp-spotlight { grid-template-columns: 1fr; }
+  .dog-park-card__photo { height: 140px; }
 }
 
 @media (max-width: 480px) {

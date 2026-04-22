@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Parks — PetWeb</title>
+  <meta name="description" content="The best dog parks in the GTA, ranked by rating, beauty, space, and off-leash access. From Toronto to Mississauga, Markham, and Brampton.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">🐕 Dog Parks</p>
+      <h1>Best Dog Parks in the GTA</h1>
+      <p>Ranked by rating, beauty, space, and off-leash access — from Toronto to Mississauga, Markham, and Brampton.</p>
+    </section>
+
+    <div id="dp-featured-banner" class="dp-featured-banner"></div>
+
+    <section class="section section--white dp-spotlight-section">
+      <p class="label dp-spotlight-label">Editor's Picks</p>
+      <h2 class="dp-spotlight-title">Top 3 Dog Parks in the GTA</h2>
+      <div id="dp-spotlight" class="dp-spotlight"></div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="dp-listings-header">
+        <div>
+          <p class="label">GTA Dog Park Directory</p>
+          <h2 class="dp-listings-title">All Parks Near You</h2>
+        </div>
+        <div class="dp-filter-wrapper">
+          <button id="dp-filter-toggle" class="btn-pill dp-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="dp-filter-panel" class="dp-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="dp-active-chips" class="dp-active-chips"></div>
+
+      <div id="dp-list" class="dog-parks-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/dog-parks.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/dog-parks.js"></script>
+</body>
+</html>

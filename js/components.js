@@ -103,6 +103,7 @@ const NAV_HTML = `
   <div class="nav-links">
     <a href="vet-services.html">Vet Services</a>
     <a href="grooming.html">Grooming</a>
+    <a href="dog-parks.html">Dog Parks</a>
     <div class="nav-dropdown">
       <button class="nav-dropdown-toggle">More &#9660;</button>
       <div class="nav-dropdown-menu">
