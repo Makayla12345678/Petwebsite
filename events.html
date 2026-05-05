@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — PetWeb</title>
+  <meta name="description" content="The best dog events in the GTA — festivals, dog shows, charity walks, pet markets, and meetups across Toronto, Mississauga, Brampton, and beyond.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">🎉 Events</p>
+      <h1>Dog Events in the GTA</h1>
+      <p>Festivals, dog shows, charity walks, pet markets, and meetups — from Toronto to Mississauga, Brampton, and beyond.</p>
+    </section>
+
+    <div id="ev-featured-banner" class="ev-featured-banner"></div>
+
+    <section class="section section--white ev-spotlight-section">
+      <p class="label ev-spotlight-label">Editor's Picks</p>
+      <h2 class="ev-spotlight-title">Top 3 Events in the GTA</h2>
+      <div id="ev-spotlight" class="ev-spotlight"></div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="ev-listings-header">
+        <div>
+          <p class="label">GTA Dog Event Directory</p>
+          <h2 class="ev-listings-title">All Events Near You</h2>
+        </div>
+        <div class="ev-filter-wrapper">
+          <button id="ev-filter-toggle" class="btn-pill ev-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="ev-filter-panel" class="ev-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="ev-active-chips" class="ev-active-chips"></div>
+
+      <div id="ev-list" class="events-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/events.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

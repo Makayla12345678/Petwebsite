@@ -11,8 +11,8 @@ const DOG_PARKS = [
     reviews: 1204,
     tagline: "One of Toronto's crown jewels — vast forested ravines with river access and unlimited room to roam.",
     website: "https://www.google.com/search?q=Sunnybrook+Off-Leash+Area",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxB1ULL99qANWTHYQTz5iHSsEZv7mTXhwSFYTBXZYcp2ObnW1bgkMC8af7tNi3Ny3k0NokvbCdAA0yaH7Msy4kFaEzu0lflcyinweEJy_qM167YwMsiXg3sF0aL22-nJZ_077m-fwknw/s1600/DSC08671.JPG",
+    imageSource: "Hiking Toronto for Dog Lovers"
   },
   {
     name: "Etienne Brûlé Park",
@@ -26,8 +26,8 @@ const DOG_PARKS = [
     reviews: 876,
     tagline: "Sprawling riverside trails along the Humber — scenic, spacious, and beloved by Etobicoke dogs.",
     website: "https://www.google.com/search?q=Etienne+Brûlé+Park+Toronto",
-    image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://blogto-production2-baselayer-display.blogto.com/uploads/2023/02/16/1676574056-20230215-etienne-brule-park_10.JPEG",
+    imageSource: "BlogTO"
   },
   {
     name: "Colonel Samuel Smith Park",
@@ -41,8 +41,8 @@ const DOG_PARKS = [
     reviews: 743,
     tagline: "Stunning lakefront off-leash area with sweeping views of Lake Ontario and a cherished community feel.",
     website: "https://www.google.com/search?q=Colonel+Samuel+Smith+Park+Toronto",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://trcaca.s3.ca-central-1.amazonaws.com/app/uploads/2023/08/29104907/erm-cssp_colonel-samuel-smith_project-background_4-1024x683.jpg",
+    imageSource: "Toronto and Region Conservation Authority"
   },
   {
     name: "High Park Off-Leash Area",
@@ -56,8 +56,8 @@ const DOG_PARKS = [
     reviews: 1891,
     tagline: "Toronto's most iconic park offers expansive trails and open meadows — a rite of passage for city dogs.",
     website: "https://www.google.com/search?q=High+Park+Off-Leash+Area+Toronto",
-    image: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://www.highparktoronto.com/images/parks/9/101.jpg",
+    imageSource: "High Park Toronto"
   },
   {
     name: "Earl Bales Park",
@@ -71,8 +71,8 @@ const DOG_PARKS = [
     reviews: 634,
     tagline: "A hidden ravine paradise in North York — wooded trails, stream access, and space to really run.",
     website: "https://www.google.com/search?q=Earl+Bales+Park+North+York",
-    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://www.ehcanadatravel.com/images/sobipro/entries/8272/img_earlbalesparktoronto.jpg",
+    imageSource: "EH Canada Travel"
   },
   {
     name: "Dufferin Grove Park",
@@ -86,8 +86,8 @@ const DOG_PARKS = [
     reviews: 512,
     tagline: "A tight-knit community off-leash area in the heart of the city — small but full of friendly faces.",
     website: "https://www.google.com/search?q=Dufferin+Grove+Park+Toronto",
-    image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://hikingthegta.com/wp-content/uploads/2021/02/img_9088.jpg?w=1024",
+    imageSource: "Hiking the GTA"
   },
   {
     name: "Greenwood Off-Leash Area",
@@ -101,8 +101,8 @@ const DOG_PARKS = [
     reviews: 398,
     tagline: "A fully fenced east-end gem with well-maintained grounds and a strong local dog community.",
     website: "https://www.google.com/search?q=Greenwood+Off-Leash+Area+Toronto",
-    image: "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "images/Dog parks /GreenWood dog park.jpg",
+    imageSource: "Greenwood Off-Leash Area"
   },
   {
     name: "Milne Dam Conservation Park",
@@ -116,8 +116,8 @@ const DOG_PARKS = [
     reviews: 521,
     tagline: "Conservation-level beauty east of the city — river trails, wildflower meadows, and serene off-leash freedom.",
     website: "https://www.google.com/search?q=Milne+Dam+Conservation+Park+Markham",
-    image: "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://visitmarkham.ca/wp-content/uploads/2023/01/Bridges_Milne-Dam_02-scaled-1.webp",
+    imageSource: "Visit Markham"
   },
   {
     name: "Erindale Park",
@@ -131,8 +131,8 @@ const DOG_PARKS = [
     reviews: 489,
     tagline: "Mississauga's best-kept secret — rolling Credit River terrain with gorgeous natural landscapes.",
     website: "https://www.google.com/search?q=Erindale+Park+Mississauga",
-    image: "https://images.unsplash.com/photo-1478827536114-da961b7f86d2?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f8/b7/6c/erindale-park.jpg?w=700&h=400&s=1",
+    imageSource: "TripAdvisor"
   },
   {
     name: "Chinguacousy Park",
@@ -146,7 +146,7 @@ const DOG_PARKS = [
     reviews: 367,
     tagline: "Brampton's beloved urban park with a dedicated fenced dog area and scenic pond surroundings.",
     website: "https://www.google.com/search?q=Chinguacousy+Park+Brampton",
-    image: "https://images.unsplash.com/photo-1515896769750-31848c907bbe?auto=format&fit=crop&w=800&q=80",
-    imageSource: "Unsplash"
+    image: "https://i0.wp.com/busymama.blog/wp-content/uploads/2022/03/e7b0b-chinguacousy-park.jpg?resize=1024%2C768&ssl=1",
+    imageSource: "Busy Mama Blog"
   }
 ];
