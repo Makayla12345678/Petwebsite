@@ -1161,15 +1161,24 @@ h1, h2, h3, h4 {
   gap: 1rem;
 }
 
-/* Individual dog park card */
+/* Individual dog park card — horizontal layout keeps the photo narrow (~280px)
+   so it renders sharp instead of stretching to full card width. */
 .dog-park-card {
   background: #fff;
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 1fr auto;
+}
+.dog-park-card > .card-img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  aspect-ratio: auto;
+  height: 100%;
+  border-radius: var(--radius-card) 0 0 var(--radius-card);
 }
 .dog-park-card__photo {
   background: var(--color-card-border);
@@ -1676,6 +1685,8 @@ h1, h2, h3, h4 {
   .dp-filter-panel { position: fixed; top: auto; bottom: 0; left: 0; right: 0; border-radius: var(--radius-card) var(--radius-card) 0 0; min-width: unset; }
   .dp-spotlight { grid-template-columns: 1fr; }
   .dog-park-card__photo { height: 140px; }
+  .dog-park-card { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
+  .dog-park-card > .card-img { grid-column: 1; grid-row: 1; aspect-ratio: 16 / 9; height: auto; border-radius: var(--radius-card) var(--radius-card) 0 0; }
 
   .ev-featured-banner { flex-direction: column; gap: 0.8rem; padding: 1.2rem 1.5rem; }
   .ev-featured-banner__right { align-items: flex-start; }
