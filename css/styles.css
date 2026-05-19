@@ -1515,8 +1515,16 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 1fr auto;
+}
+.event-card > .card-img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  aspect-ratio: auto;
+  height: 100%;
+  border-radius: var(--radius-card) 0 0 var(--radius-card);
 }
 .event-card__photo {
   background: var(--color-card-border);
@@ -1694,6 +1702,8 @@ h1, h2, h3, h4 {
   .ev-filter-panel { position: fixed; top: auto; bottom: 0; left: 0; right: 0; border-radius: var(--radius-card) var(--radius-card) 0 0; min-width: unset; }
   .ev-spotlight { grid-template-columns: 1fr; }
   .event-card__photo { height: 140px; }
+  .event-card { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
+  .event-card > .card-img { grid-column: 1; grid-row: 1; aspect-ratio: 16 / 9; height: auto; border-radius: var(--radius-card) var(--radius-card) 0 0; }
 }
 
 @media (max-width: 480px) {
