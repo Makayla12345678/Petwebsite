@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly Private Jets — PetWeb</title>
+  <meta name="description" content="Private jet charters and fractional ownership programs that welcome pets in-cabin, with no crates required.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">🛩️ Private Jets</p>
+      <h1>Pet-Friendly Private Jets</h1>
+      <p>Charter operators and fractional ownership programs that welcome pets in-cabin, no crates required.</p>
+    </section>
+
+    <div id="private-jet-featured-banner" class="private-jet-featured-banner"></div>
+
+    <section class="section section--cream">
+      <div class="private-jet-listings-header">
+        <div>
+          <p class="label">Charter Directory</p>
+          <h2 class="private-jet-listings-title">All Pet-Friendly Charters</h2>
+        </div>
+        <div class="dp-filter-wrapper">
+          <button id="private-jet-filter-toggle" class="btn-pill dp-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="private-jet-filter-panel" class="dp-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="private-jet-active-chips" class="dp-active-chips"></div>
+
+      <div id="private-jets-list" class="private-jets-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/private-jets.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/private-jets.js"></script>
+</body>
+</html>

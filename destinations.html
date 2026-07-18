@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly Destinations — PetWeb</title>
+  <meta name="description" content="The best pet-friendly travel destinations worldwide, ranked by rating, off-leash access, and pet-friendly amenities.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">🗺️ Destinations</p>
+      <h1>Pet-Friendly Destinations</h1>
+      <p>Ranked by rating, off-leash access, and pet-friendly amenities — from beach towns to alpine trails.</p>
+    </section>
+
+    <div id="destination-featured-banner" class="destination-featured-banner"></div>
+
+    <section class="section section--cream">
+      <div class="destination-listings-header">
+        <div>
+          <p class="label">Destination Directory</p>
+          <h2 class="destination-listings-title">All Pet-Friendly Destinations</h2>
+        </div>
+        <div class="dp-filter-wrapper">
+          <button id="destination-filter-toggle" class="btn-pill dp-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="destination-filter-panel" class="dp-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="destination-active-chips" class="dp-active-chips"></div>
+
+      <div id="destinations-list" class="destinations-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/destinations.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/destinations.js"></script>
+</body>
+</html>

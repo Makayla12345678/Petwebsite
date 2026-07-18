@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly Airlines — PetWeb</title>
+  <meta name="description" content="Compare pet policies across major airlines — in-cabin allowances, cargo options, fees, and size limits.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">✈️ Airlines</p>
+      <h1>Pet-Friendly Airlines</h1>
+      <p>Compare in-cabin allowances, cargo options, fees, and size limits across major carriers.</p>
+    </section>
+
+    <div id="airline-featured-banner" class="airline-featured-banner"></div>
+
+    <section class="section section--cream">
+      <div class="airline-listings-header">
+        <div>
+          <p class="label">Airline Directory</p>
+          <h2 class="airline-listings-title">All Pet-Friendly Airlines</h2>
+        </div>
+        <div class="dp-filter-wrapper">
+          <button id="airline-filter-toggle" class="btn-pill dp-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="airline-filter-panel" class="dp-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="airline-active-chips" class="dp-active-chips"></div>
+
+      <div id="airlines-list" class="airlines-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/airlines.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/airlines.js"></script>
+</body>
+</html>
