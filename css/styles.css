@@ -169,6 +169,24 @@ h1, h2, h3, h4 {
 }
 .nav-dropdown-menu a:hover { background: var(--color-pink); color: var(--color-primary); }
 
+.nav-dropdown-section {
+  display: block;
+  padding: 0.7rem 1rem 0.25rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-muted);
+  background: transparent;
+  cursor: default;
+  user-select: none;
+  border-top: 1px solid var(--color-card-border);
+}
+.nav-dropdown-section:first-child {
+  padding-top: 0.5rem;
+  border-top: none;
+}
+
 .nav-hamburger {
   display: none;
   background: none;
@@ -1669,6 +1687,287 @@ h1, h2, h3, h4 {
 .footer-links a:hover { color: var(--color-primary); }
 
 /* =====================
+   TRAVEL — HOTELS, DESTINATIONS, AIRLINES, PRIVATE JETS
+   (Filter UI reuses .vet-filter-*, .vet-chip, .vet-active-chips per CLAUDE.md)
+   ===================== */
+
+/* Featured banners (one rule set per page class to allow per-page tweaks later) */
+.hotel-featured-banner,
+.destination-featured-banner,
+.airline-featured-banner,
+.private-jet-featured-banner {
+  background: var(--color-secondary);
+  padding: 1.6rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.hotel-featured-banner__badge,
+.destination-featured-banner__badge,
+.airline-featured-banner__badge,
+.private-jet-featured-banner__badge {
+  display: inline-block;
+  background: var(--color-pink);
+  color: var(--color-primary);
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.hotel-featured-banner__name,
+.destination-featured-banner__name,
+.airline-featured-banner__name,
+.private-jet-featured-banner__name {
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.hotel-featured-banner__tagline,
+.destination-featured-banner__tagline,
+.airline-featured-banner__tagline,
+.private-jet-featured-banner__tagline {
+  color: rgba(250,248,243,0.75);
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+}
+.hotel-featured-banner__right,
+.destination-featured-banner__right,
+.airline-featured-banner__right,
+.private-jet-featured-banner__right {
+  text-align: center;
+  flex-shrink: 0;
+}
+.hotel-featured-banner__score,
+.destination-featured-banner__score,
+.airline-featured-banner__score,
+.private-jet-featured-banner__score {
+  display: block;
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.hotel-featured-banner__stars,
+.destination-featured-banner__stars,
+.airline-featured-banner__stars,
+.private-jet-featured-banner__stars {
+  display: block;
+  color: var(--color-pink);
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+/* Listings headers + lists */
+.hotel-listings-header,
+.destination-listings-header,
+.airline-listings-header,
+.private-jet-listings-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.hotel-listings-title,
+.destination-listings-title,
+.airline-listings-title,
+.private-jet-listings-title {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+.hotels-list,
+.destinations-list,
+.airlines-list,
+.private-jets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Individual cards (shared structure, per-page class for future per-page tweaks) */
+.hotel-card,
+.destination-card,
+.airline-card,
+.private-jet-card {
+  background: #fff;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 1fr auto;
+}
+.hotel-card > .card-img,
+.destination-card > .card-img,
+.airline-card > .card-img,
+.private-jet-card > .card-img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  aspect-ratio: auto;
+  height: 100%;
+  border-radius: var(--radius-card) 0 0 var(--radius-card);
+}
+.hotel-card__photo,
+.destination-card__photo,
+.airline-card__photo,
+.private-jet-card__photo {
+  background: var(--color-card-border);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+.hotel-card__body,
+.destination-card__body,
+.airline-card__body,
+.private-jet-card__body {
+  padding: 1.2rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.hotel-card__name,
+.destination-card__name,
+.airline-card__name,
+.private-jet-card__name {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+.hotel-card__address,
+.destination-card__address,
+.airline-card__address,
+.private-jet-card__address {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+.hotel-card__tags,
+.destination-card__tags,
+.airline-card__tags,
+.private-jet-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+.hotel-card__tag,
+.destination-card__tag,
+.airline-card__tag,
+.private-jet-card__tag {
+  background: var(--color-pink);
+  color: var(--color-primary);
+  border: 1px solid var(--color-pink-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  font-family: var(--font-sans);
+}
+.hotel-card__services,
+.destination-card__services,
+.airline-card__services,
+.private-jet-card__services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+.hotel-card__service-tag,
+.destination-card__service-tag,
+.airline-card__service-tag,
+.private-jet-card__service-tag {
+  background: var(--color-cream);
+  color: var(--color-text);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  font-family: var(--font-sans);
+}
+.hotel-card__badge,
+.destination-card__badge,
+.airline-card__badge,
+.private-jet-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+.hotel-card__rating,
+.destination-card__rating,
+.airline-card__rating,
+.private-jet-card__rating {
+  border-top: 1px solid var(--color-card-border);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.hotel-card__score,
+.destination-card__score,
+.airline-card__score,
+.private-jet-card__score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  line-height: 1;
+}
+.hotel-card__stars,
+.destination-card__stars,
+.airline-card__stars,
+.private-jet-card__stars {
+  color: #C8952A;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+.hotel-card__review-count,
+.destination-card__review-count,
+.airline-card__review-count,
+.private-jet-card__review-count {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+.hotel-card__book-btn,
+.destination-card__book-btn,
+.airline-card__book-btn,
+.private-jet-card__book-btn {
+  margin-left: auto;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.hotel-card__book-btn:hover,
+.destination-card__book-btn:hover,
+.airline-card__book-btn:hover,
+.private-jet-card__book-btn:hover {
+  background: var(--color-secondary);
+  box-shadow: 0 2px 6px rgba(93,109,158,0.25);
+}
+
+/* =====================
    RESPONSIVE
    ===================== */
 @media (max-width: 768px) {
@@ -1724,6 +2023,31 @@ h1, h2, h3, h4 {
   .event-card__photo { height: 140px; }
   .event-card { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
   .event-card > .card-img { grid-column: 1; grid-row: 1; aspect-ratio: 16 / 9; height: auto; border-radius: var(--radius-card) var(--radius-card) 0 0; }
+
+  .hotel-featured-banner,
+  .destination-featured-banner,
+  .airline-featured-banner,
+  .private-jet-featured-banner { flex-direction: column; gap: 0.8rem; padding: 1.2rem 1.5rem; }
+  .hotel-featured-banner__right,
+  .destination-featured-banner__right,
+  .airline-featured-banner__right,
+  .private-jet-featured-banner__right { text-align: left; }
+  .hotel-listings-header,
+  .destination-listings-header,
+  .airline-listings-header,
+  .private-jet-listings-header { flex-direction: column; gap: 0.8rem; }
+  .hotel-card__photo,
+  .destination-card__photo,
+  .airline-card__photo,
+  .private-jet-card__photo { height: 140px; }
+  .hotel-card,
+  .destination-card,
+  .airline-card,
+  .private-jet-card { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
+  .hotel-card > .card-img,
+  .destination-card > .card-img,
+  .airline-card > .card-img,
+  .private-jet-card > .card-img { grid-column: 1; grid-row: 1; aspect-ratio: 16 / 9; height: auto; border-radius: var(--radius-card) var(--radius-card) 0 0; }
 }
 
 @media (max-width: 480px) {
