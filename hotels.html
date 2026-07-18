@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly Hotels — PetWeb</title>
+  <meta name="description" content="The best pet-friendly hotels worldwide, ranked by rating, pet fees, and amenities — from no-fee boutique stays to five-star resorts.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <section class="page-hero">
+      <p class="label">🏨 Hotels</p>
+      <h1>Pet-Friendly Hotels</h1>
+      <p>Ranked by rating, pet fees, and amenities — from no-fee boutique stays to five-star resorts around the world.</p>
+    </section>
+
+    <div id="hotel-featured-banner" class="hotel-featured-banner"></div>
+
+    <section class="section section--cream">
+      <div class="hotel-listings-header">
+        <div>
+          <p class="label">Hotel Directory</p>
+          <h2 class="hotel-listings-title">All Pet-Friendly Hotels</h2>
+        </div>
+        <div class="dp-filter-wrapper">
+          <button id="hotel-filter-toggle" class="btn-pill dp-filter-btn" aria-expanded="false">
+            Filters &#9660;
+          </button>
+          <div id="hotel-filter-panel" class="dp-filter-panel" hidden></div>
+        </div>
+      </div>
+
+      <div id="hotel-active-chips" class="dp-active-chips"></div>
+
+      <div id="hotels-list" class="hotels-list"></div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="data/hotels.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/hotels.js"></script>
+</body>
+</html>
