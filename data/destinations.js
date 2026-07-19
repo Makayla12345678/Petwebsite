@@ -17,8 +17,8 @@ const DESTINATIONS = [
     rating: 4.9,
     reviews: 3214,
     website: "https://www.banff.ca/",
-    image: "https://placehold.co/800x450?text=Banff+National+Park",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://banfflakelouise.bynder.com/m/3e441b211be46c42/1000x540_jpg-2021_TwoJackLake_SUP_ShannonMartin-24.jpg",
+    imageSource: "Banff & Lake Louise Tourism"
   },
   {
     name: "Huntington Dog Beach",
@@ -33,8 +33,8 @@ const DESTINATIONS = [
     rating: 4.8,
     reviews: 5602,
     website: "https://www.dogbeach.org/",
-    image: "https://placehold.co/800x450?text=Huntington+Dog+Beach",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_450,q_75,w_800/v1/clients/surfcityusa-redesign/Dog_Beach_webpage_e5fa8d8d-027f-4dba-b000-f045301613bd.jpg",
+    imageSource: "Visit Huntington Beach (Surf City USA)"
   },
   {
     name: "Amsterdam",
@@ -48,8 +48,8 @@ const DESTINATIONS = [
     rating: 4.7,
     reviews: 2890,
     website: "https://www.iamsterdam.com/",
-    image: "https://placehold.co/800x450?text=Amsterdam",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://app.thefeedfactory.nl/api/assets/64ca69e789aea81e03ad3372/Cycling_through_Vondelpark-Koen_Smilde_Photography_-Redactioneel.webp",
+    imageSource: "I amsterdam"
   },
   {
     name: "Muskoka Lakes",
@@ -63,8 +63,8 @@ const DESTINATIONS = [
     rating: 4.7,
     reviews: 1543,
     website: "https://www.discovermuskoka.ca/",
-    image: "https://placehold.co/800x450?text=Muskoka+Lakes",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.discovermuskoka.ca/wp-content/uploads/2022/10/muskoka-lakes.jpg",
+    imageSource: "Discover Muskoka"
   },
   {
     name: "Carmel-by-the-Sea",
@@ -79,8 +79,8 @@ const DESTINATIONS = [
     rating: 4.9,
     reviews: 2109,
     website: "https://www.carmelcalifornia.com/",
-    image: "https://placehold.co/800x450?text=Carmel-by-the-Sea",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://ci.carmel.ca.us/sites/main/files/imagecache/lightbox/main-images/img_0394.jpg",
+    imageSource: "City of Carmel-by-the-Sea"
   },
   {
     name: "Lake Como",
@@ -94,8 +94,8 @@ const DESTINATIONS = [
     rating: 4.6,
     reviews: 1287,
     website: "https://www.lakecomo.com/",
-    image: "https://placehold.co/800x450?text=Lake+Como",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://lakecomotourism.it/wp-content/uploads/2023/10/lake-como-tourism-banner-centro-lago-1024x537.webp",
+    imageSource: "Lake Como Tourism"
   },
   {
     name: "Vancouver",
@@ -109,8 +109,8 @@ const DESTINATIONS = [
     rating: 4.8,
     reviews: 4021,
     website: "https://www.tourismvancouver.com/",
-    image: "https://placehold.co/800x450?text=Vancouver",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://images.spaicelabs.com/images/flus6j8v/production/29b37d920b02322aefa6e732605db987c3e4f432-1200x800.jpg?w=1200&fm=jpg&q=75&fit=max",
+    imageSource: "Destination Vancouver"
   },
   {
     name: "Scottish Highlands",
@@ -125,8 +125,8 @@ const DESTINATIONS = [
     rating: 4.7,
     reviews: 987,
     website: "https://www.visitscotland.com/",
-    image: "https://placehold.co/800x450?text=Scottish+Highlands",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.visitscotland.com/binaries/content/gallery/visitscotland/cms-images/2024/09/09/glen-affric",
+    imageSource: "VisitScotland"
   },
   {
     name: "Austin",
@@ -140,8 +140,8 @@ const DESTINATIONS = [
     rating: 4.6,
     reviews: 3350,
     website: "https://www.austintexas.org/",
-    image: "https://placehold.co/800x450?text=Austin",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_595,q_75,w_750/v1/clients/austin/9_Barton_Springs_Pool_PICA_01009_Austin_History_Center_Austin_Public_Library_1ef34327-f625-4f91-87b0-50f0dcfb96bb.jpg",
+    imageSource: "Visit Austin"
   },
   {
     name: "Queenstown",
@@ -155,7 +155,7 @@ const DESTINATIONS = [
     rating: 4.8,
     reviews: 1102,
     website: "https://www.queenstownnz.co.nz/",
-    image: "https://placehold.co/800x450?text=Queenstown",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_768,q_65,w_1366,x_2483,y_1300/v1/clients/queenstownnz/Queenstown_Winter_Aerial_from_Bob_s_Peak_d235bb1a-11a4-4e9e-bda9-1e61482be079.jpg",
+    imageSource: "Destination Queenstown"
   }
 ];

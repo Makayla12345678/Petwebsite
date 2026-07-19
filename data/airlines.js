@@ -18,8 +18,8 @@ const AIRLINES = [
     rating: 4.5,
     reviews: 2210,
     website: "https://www.westjet.com/en-ca/travel-info/traveling-with-pets",
-    image: "https://placehold.co/800x450?text=WestJet",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.westjet.com/content/dam/westjet/images/newsroom/media-resources/boeing-737-8-max/230502-WestJet-MAX8-Rockies-1600x900.jpg",
+    imageSource: "WestJet"
   },
   {
     name: "Air Canada",
@@ -34,8 +34,8 @@ const AIRLINES = [
     rating: 4.3,
     reviews: 3105,
     website: "https://www.aircanada.com/ca/en/aco/home/plan/traveling-with-pets.html",
-    image: "https://placehold.co/800x450?text=Air+Canada",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://content.presspage.com/uploads/3167/86720a04-50fa-4632-9e2d-319f87025667/1920_2025-11-27_winter-olympics-livery_english.jpg",
+    imageSource: "Air Canada"
   },
   {
     name: "JetBlue",
@@ -50,8 +50,8 @@ const AIRLINES = [
     rating: 4.6,
     reviews: 4520,
     website: "https://www.jetblue.com/traveling-together/traveling-with-pets",
-    image: "https://placehold.co/800x450?text=JetBlue",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://s202.q4cdn.com/521076508/files/design/thumbs/News/JetBlue-Mint-Livery.jpg",
+    imageSource: "JetBlue"
   },
   {
     name: "Alaska Airlines",
@@ -66,8 +66,8 @@ const AIRLINES = [
     rating: 4.5,
     reviews: 2894,
     website: "https://www.alaskaair.com/content/travel-info/pets",
-    image: "https://placehold.co/800x450?text=Alaska+Airlines",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://news.alaskaair.com/wp-content/uploads/2026/05/20260529_Alaska.TS5_.livery.003.jpg",
+    imageSource: "Alaska Airlines"
   },
   {
     name: "Lufthansa",
@@ -82,8 +82,8 @@ const AIRLINES = [
     rating: 4.2,
     reviews: 1876,
     website: "https://www.lufthansa.com/de/en/pets",
-    image: "https://placehold.co/800x450?text=Lufthansa",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://content.presspage.com/uploads/2888/81cd6f71-9aba-47cb-91af-66015ff3ea4a/1920_lh_100y_fleet_renders_six_aircraft_jpeg.jpg",
+    imageSource: "Lufthansa"
   },
   {
     name: "Air France",
@@ -147,8 +147,8 @@ const AIRLINES = [
     rating: 4.3,
     reviews: 1432,
     website: "https://www.klm.com/travel/nl_en/prepare_for_travel/travel_faq/pets.htm",
-    image: "https://placehold.co/800x450?text=KLM",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://content.presspage.com/uploads/162/1920_737-8.jpg",
+    imageSource: "KLM"
   },
   {
     name: "Delta Air Lines",
@@ -163,7 +163,7 @@ const AIRLINES = [
     rating: 4.1,
     reviews: 5210,
     website: "https://www.delta.com/us/en/pet-travel/overview",
-    image: "https://placehold.co/800x450?text=Delta+Air+Lines",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://news.delta.com/sites/default/files/styles/google_news_1200x675/public/2022-07/e175_2.jpg",
+    imageSource: "Delta Air Lines"
   }
 ];

@@ -36,8 +36,8 @@ const HOTELS = [
     rating: 4.7,
     reviews: 2104,
     website: "https://www.loewshotels.com/regency-new-york",
-    image: "https://placehold.co/800x450?text=Loews+Regency+New+York",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4d3a047524.jpg/1920x1080/fit;c:0,227,2560,1667/80/7e3aca22a54a2a7cf8f5746daa0777ff.jpg",
+    imageSource: "Loews Hotels & Co"
   },
   {
     name: "Fairmont Royal York",
@@ -53,8 +53,8 @@ const HOTELS = [
     rating: 4.6,
     reviews: 3812,
     website: "https://www.fairmont.com/royal-york-toronto/",
-    image: "https://placehold.co/800x450?text=Fairmont+Royal+York",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.thefairmontroyalyork.com/content/uploads/2024/08/Fairmont-Royal-York-Exterior-Hotel-Girlfriends-hi-res-no-flag-jpg-scaled.jpg",
+    imageSource: "Fairmont Royal York Toronto"
   },
   {
     name: "Four Seasons Hotel Toronto",
@@ -89,8 +89,8 @@ const HOTELS = [
     rating: 4.6,
     reviews: 1203,
     website: "https://www.kimptondewitthotel.com/",
-    image: "https://placehold.co/800x450?text=Kimpton+De+Witt+Amsterdam",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.kimptondewitthotel.com/wp-content/uploads/2025/03/250225_Kimpton116.jpg",
+    imageSource: "Kimpton De Witt Amsterdam"
   },
   {
     name: "The Cosmopolitan of Las Vegas",
@@ -123,8 +123,8 @@ const HOTELS = [
     rating: 4.6,
     reviews: 4983,
     website: "https://hoteldel.com/",
-    image: "https://placehold.co/800x450?text=Hotel+del+Coronado",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.hoteldel.com/wp-content/uploads/2023/06/hotel-del-coronado-aerial-turret-pool-wecreate-2021.jpg",
+    imageSource: "Hotel del Coronado"
   },
   {
     name: "Hôtel Plaza Athénée",
@@ -158,8 +158,8 @@ const HOTELS = [
     rating: 4.7,
     reviews: 1894,
     website: "https://www.langhamhotels.com/en/the-langham/london/",
-    image: "https://placehold.co/800x450?text=The+Langham+London",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://assets.langhamhotels.com/is/image/langhamhotelsstage/tllon_exterior_birds_eye_view_2023?wid=1600",
+    imageSource: "The Langham, London"
   },
   {
     name: "The Standard, High Line",

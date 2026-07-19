@@ -19,8 +19,8 @@ const PRIVATE_JETS = [
     rating: 4.8,
     reviews: 312,
     website: "https://bitlux.com/",
-    image: "https://placehold.co/800x450?text=BitLux",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://bitlux.com/wp-content/uploads/2026/03/private-jet-fleet.jpeg",
+    imageSource: "BitLux"
   },
   {
     name: "K9 Jets",
@@ -37,8 +37,8 @@ const PRIVATE_JETS = [
     rating: 4.9,
     reviews: 187,
     website: "https://k9jets.com/",
-    image: "https://placehold.co/800x450?text=K9+Jets",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://b5c6bde2.delivery.rocketcdn.me/wp-content/uploads/elementor/thumbs/Fly-With-Two-Pets-rkqjtn4yjjii7xd3ynkbma9b9n4lfhjuideleqxpx8.jpg",
+    imageSource: "K9 Jets"
   },
   {
     name: "NetJets",
@@ -54,8 +54,8 @@ const PRIVATE_JETS = [
     rating: 4.6,
     reviews: 540,
     website: "https://www.netjets.com/",
-    image: "https://placehold.co/800x450?text=NetJets",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://nj-corp-site-resizer.awsmktg.netjets.com/q85-w1920/public/webdam/aircraft/global-7500-bombardier/flagship-exprience/images/7500-2048x1536-banner-134630473-v1.jpg?cgqxARydE6N3Uiduwtw1UHlvZAlu21QB",
+    imageSource: "NetJets"
   },
   {
     name: "Wheels Up",
@@ -89,8 +89,8 @@ const PRIVATE_JETS = [
     rating: 4.7,
     reviews: 265,
     website: "https://www.vistajet.com/",
-    image: "https://placehold.co/800x450?text=VistaJet",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://www.vistajet.com/globalassets/images/corporate/corporate_global_fleet.webp",
+    imageSource: "VistaJet"
   },
   {
     name: "Flexjet",
@@ -106,8 +106,8 @@ const PRIVATE_JETS = [
     rating: 4.5,
     reviews: 301,
     website: "https://flexjet.com/",
-    image: "https://placehold.co/800x450?text=Flexjet",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://images.prismic.io/flexjet-marketing/aj14S1bRV8_Qf5CP_Gulfstream-G500-LXi-Cabin-Collection-Stratus-front-view.jpg?auto=format%2Ccompress&fit=max&w=1600",
+    imageSource: "Flexjet"
   },
   {
     name: "Jettly",
@@ -141,8 +141,8 @@ const PRIVATE_JETS = [
     rating: 4.6,
     reviews: 178,
     website: "https://www.aircharterservice.com/",
-    image: "https://placehold.co/800x450?text=Air+Charter+Service",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://images.aircharterservice.com/sites/usa/air-charter-service-private-charter_tcm61-37104_tcm36-37104.jpg",
+    imageSource: "Air Charter Service"
   },
   {
     name: "PrivateFly",
@@ -159,8 +159,8 @@ const PRIVATE_JETS = [
     rating: 4.5,
     reviews: 246,
     website: "https://www.privatefly.com/",
-    image: "https://placehold.co/800x450?text=PrivateFly",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://images.prismic.io/privatefly/de251182-0488-432e-b059-588320f30ba3_Private+jet+tail+at+sunrise+700x400.png?auto=compress,format&w=1200",
+    imageSource: "PrivateFly"
   },
   {
     name: "XO",
@@ -176,7 +176,7 @@ const PRIVATE_JETS = [
     rating: 4.4,
     reviews: 289,
     website: "https://flyxo.com/",
-    image: "https://placehold.co/800x450?text=XO",
-    imageSource: "Placeholder — run /photos to populate"
+    image: "https://website-cdn.flyxo.com/data/webapi/new_plane_home_326d044e05.jpg",
+    imageSource: "XO"
   }
 ];
