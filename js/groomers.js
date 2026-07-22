@@ -248,6 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   buildFilterPanel();
   renderGroomers(GROOMERS);
+  injectItemListSchema(GROOMERS, 'LocalBusiness', 'Toronto', 'groomers-jsonld');
 
   const toggleBtn = document.getElementById('groomer-filter-toggle');
   const panel = document.getElementById('groomer-filter-panel');

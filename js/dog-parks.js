@@ -297,6 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSpotlight();
   buildFilterPanel();
   renderDogParks(DOG_PARKS);
+  injectItemListSchema(DOG_PARKS, 'Park', 'Toronto', 'dog-parks-jsonld');
 
   const toggleBtn = document.getElementById('dp-filter-toggle');
   const panel = document.getElementById('dp-filter-panel');

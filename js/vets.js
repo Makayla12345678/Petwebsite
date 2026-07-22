@@ -215,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderFeaturedBanner(VETS, { bannerId: 'vet-featured-banner', bannerClass: 'vet-featured-banner', badgeText: '#1 in the GTA' });
   buildFilterPanel();
   renderVets(VETS);
+  injectItemListSchema(VETS, 'VeterinaryCare', 'Toronto', 'vets-jsonld');
 
   const toggleBtn = document.getElementById('vet-filter-toggle');
   const panel = document.getElementById('vet-filter-panel');

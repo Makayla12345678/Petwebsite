@@ -49,7 +49,7 @@ function buildCard(item, config) {
     <div class="${cardClass}">
       ${item.image
         ? `<figure class="card-img">
-             <img src="${item.image}" alt="${item.name}" loading="lazy">
+             <img src="${item.image}" alt="${item.name}${item.neighbourhood || item.city ? ` – ${cardClass.replace('-card', '').replace('-', ' ')} in ${item.neighbourhood || item.city}` : ''}" loading="lazy">
              ${item.imageSource ? `<figcaption class="img-source">${item.imageSource}</figcaption>` : ""}
            </figure>`
         : `<div class="${cardClass}__photo">🐾</div>`
@@ -95,6 +95,63 @@ function renderFeaturedBanner(data, config) {
       <span class="${bannerClass}__score">${item.rating.toFixed(1)}</span>
       ${buildStars(item.rating, `${bannerClass}__stars`)}
     </div>`;
+}
+
+/**
+ * Injects (or updates) a <script type="application/ld+json"> tag in <head>.
+ */
+function injectJsonLd(id, data) {
+  let script = document.getElementById(id);
+  if (!script) {
+    script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = id;
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(data);
+}
+
+/**
+ * Builds a schema.org entity for a single directory listing.
+ */
+function buildLocalBusinessSchema(item, schemaType, cityFallback) {
+  const schema = {
+    '@type': schemaType,
+    name: item.name,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: item.address,
+      addressLocality: item.neighbourhood || item.city || cityFallback,
+      addressRegion: 'ON',
+      addressCountry: 'CA'
+    }
+  };
+  if (item.rating != null) {
+    schema.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: item.rating,
+      reviewCount: item.reviews || 1
+    };
+  }
+  if (item.website) schema.url = item.website;
+  if (item.image) schema.image = item.image;
+  return schema;
+}
+
+/**
+ * Injects an ItemList + per-item LocalBusiness/Place JSON-LD block for a directory page.
+ */
+function injectItemListSchema(list, schemaType, cityFallback, scriptId) {
+  if (!list || !list.length) return;
+  injectJsonLd(scriptId, {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: list.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: buildLocalBusinessSchema(item, schemaType, cityFallback)
+    }))
+  });
 }
 
 const NAV_HTML = `
