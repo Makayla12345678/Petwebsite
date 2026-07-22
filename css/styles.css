@@ -742,6 +742,12 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+.event-card .card-img img {
+  object-fit: contain;
+  background: #fff;
+  padding: 0.5rem;
+}
+
 .img-source {
   position: absolute;
   bottom: 6px;
@@ -1396,7 +1402,9 @@ h1, h2, h3, h4 {
 .ev-spotlight-card__img-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
+  padding: 0.5rem;
   display: block;
 }
 .ev-spotlight-card__img-placeholder {
