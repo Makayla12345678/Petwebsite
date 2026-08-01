@@ -156,7 +156,7 @@ function injectItemListSchema(list, schemaType, cityFallback, scriptId) {
 
 const NAV_HTML = `
 <nav class="nav">
-  <a href="index.html" class="nav-logo">🐾 PetWeb</a>
+  <a href="index.html" class="nav-logo">🐾 Pets of GTA</a>
   <div class="nav-links">
     <a href="vet-services.html">Vet Services</a>
     <a href="grooming.html">Grooming</a>
@@ -185,8 +185,8 @@ const NAV_HTML = `
 
 const FOOTER_HTML = `
 <footer class="footer">
-  <a href="index.html" class="footer-logo">🐾 PetWeb</a>
-  <p class="footer-copy">&#169; 2026 PetWeb &middot; Made with love for animals</p>
+  <a href="index.html" class="footer-logo">🐾 Pets of GTA</a>
+  <p class="footer-copy">&#169; 2026 Pets of GTA &middot; Made with love for animals</p>
   <div class="footer-links">
     <a href="#">Privacy</a>
     <a href="#">Contact</a>

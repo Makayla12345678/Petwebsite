@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-PetWeb is a **static, dependency-free website** (HTML + CSS + vanilla JS) — a pet-care resource directory focused on the Greater Toronto Area (GTA). There is no build system, no package manager, no test suite, and no framework. Files are served as-is.
+Pets of GTA is a **static, dependency-free website** (HTML + CSS + vanilla JS) — a pet-care resource directory focused on the Greater Toronto Area (GTA). There is no build system, no package manager, no test suite, and no framework. Files are served as-is.
 
 ## Running locally
 
