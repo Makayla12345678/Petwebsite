@@ -781,7 +781,7 @@ git commit -m "feat: add groomers data file with 15 GTA groomer records"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Grooming — PetWeb</title>
+  <title>Pet Grooming — Pets of GTA</title>
   <meta name="description" content="Find the best pet groomers in the GTA. Browse top-rated grooming salons for your dog or cat.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -1156,7 +1156,7 @@ In `js/components.js`, find the NAV_HTML `<div class="nav-links">` block and add
 ```js
 const NAV_HTML = `
 <nav class="nav">
-  <a href="index.html" class="nav-logo">🐾 PetWeb</a>
+  <a href="index.html" class="nav-logo">🐾 Pets of GTA</a>
   <div class="nav-links">
     <a href="shelters.html">Shelters</a>
     <a href="adoption.html">Adoption</a>

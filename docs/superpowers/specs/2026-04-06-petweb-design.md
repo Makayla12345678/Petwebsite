@@ -1,11 +1,11 @@
-# PetWeb — Design Specification
+# Pets of GTA — Design Specification
 **Date:** 2026-04-06
 
 ---
 
 ## Overview
 
-PetWeb is a plain HTML/CSS/JavaScript website that connects visitors with local animal shelters and provides educational resources on pet care. The site is focused on compassion for animals and generating genuine trust from users. It feels warm, friendly, and inviting while maintaining a clean, elegant aesthetic.
+Pets of GTA is a plain HTML/CSS/JavaScript website that connects visitors with local animal shelters and provides educational resources on pet care. The site is focused on compassion for animals and generating genuine trust from users. It feels warm, friendly, and inviting while maintaining a clean, elegant aesthetic.
 
 ---
 
