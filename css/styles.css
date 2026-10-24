@@ -2064,3 +2064,14 @@ h1, h2, h3, h4 {
   .shelter-card { flex-direction: column; }
   .shelter-card__cta { align-self: flex-start; }
 }
+
+/* SEO summary + FAQ (static, crawlable block on directory pages) */
+.seo-summary { max-width: 860px; margin: 0 auto; }
+.seo-summary h2 { font-family: var(--font-serif); color: var(--color-primary); margin-bottom: 0.75rem; }
+.seo-summary h3 { font-family: var(--font-serif); color: var(--color-primary); margin: 1.5rem 0 0.5rem; }
+.seo-summary p, .seo-summary li { color: var(--color-text); line-height: 1.6; }
+.seo-summary ol { padding-left: 1.25rem; margin: 0; }
+.seo-summary a { color: var(--color-primary); }
+.seo-summary details { border: 1px solid var(--color-card-border); border-radius: var(--radius-card); padding: 0.75rem 1rem; margin-bottom: 0.6rem; background: var(--color-cream); }
+.seo-summary summary { cursor: pointer; font-weight: 600; color: var(--color-primary); }
+.seo-summary details p { margin: 0.5rem 0 0; }

@@ -206,6 +206,22 @@ function injectComponents() {
     if (link.getAttribute('href') === page) link.classList.add('nav-link--active');
   });
 
+  // Breadcrumb structured data (Home > Page) for every non-home page
+  const h1 = document.querySelector('h1');
+  if (page !== 'index.html' && h1) {
+    const crumbs = document.createElement('script');
+    crumbs.type = 'application/ld+json';
+    crumbs.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.petsofgta.com/' },
+        { '@type': 'ListItem', position: 2, name: h1.textContent.trim(), item: 'https://www.petsofgta.com/' + page }
+      ]
+    });
+    document.head.appendChild(crumbs);
+  }
+
   // Dropdown toggle
   const toggle = document.querySelector('.nav-dropdown-toggle');
   const menu = document.querySelector('.nav-dropdown-menu');
