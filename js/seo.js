@@ -1,7 +1,7 @@
 // Injects schema.org JSON-LD for the directory pages from the same data arrays
 // that render the listings. Load after the data file; independent of components.js.
 (function() {
-  const SITE = 'https://www.petsofgta.com';
+  const SITE = 'https://petsofgta.com';
 
   function addJsonLd(obj) {
     const el = document.createElement('script');

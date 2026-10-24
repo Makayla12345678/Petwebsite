@@ -215,8 +215,8 @@ function injectComponents() {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.petsofgta.com/' },
-        { '@type': 'ListItem', position: 2, name: h1.textContent.trim(), item: 'https://www.petsofgta.com/' + page }
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://petsofgta.com/' },
+        { '@type': 'ListItem', position: 2, name: h1.textContent.trim(), item: 'https://petsofgta.com/' + page }
       ]
     });
     document.head.appendChild(crumbs);
