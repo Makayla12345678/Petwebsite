@@ -2075,3 +2075,25 @@ h1, h2, h3, h4 {
 .seo-summary details { border: 1px solid var(--color-card-border); border-radius: var(--radius-card); padding: 0.75rem 1rem; margin-bottom: 0.6rem; background: var(--color-cream); }
 .seo-summary summary { cursor: pointer; font-weight: 600; color: var(--color-primary); }
 .seo-summary details p { margin: 0.5rem 0 0; }
+
+/* =====================
+   COOKIE CONSENT BANNER
+   ===================== */
+.consent-banner {
+  position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 1000;
+  max-width: 720px; margin: 0 auto;
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: 0.9rem 1.1rem;
+  background: #fff; border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-card); box-shadow: 0 4px 16px rgba(93,109,158,0.2);
+  font-size: 0.85rem;
+}
+.consent-banner p { flex: 1 1 280px; }
+.consent-banner a { color: var(--color-primary); text-decoration: underline; }
+.consent-banner__actions { display: flex; gap: 0.5rem; }
+.consent-banner__btn {
+  font: inherit; cursor: pointer; padding: 0.4rem 1rem;
+  border-radius: var(--radius-pill); border: 1px solid var(--color-primary);
+  background: var(--color-primary); color: #fff;
+}
+.consent-banner__btn--ghost { background: #fff; color: var(--color-primary); }

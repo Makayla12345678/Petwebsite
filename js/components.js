@@ -188,7 +188,7 @@ const FOOTER_HTML = `
   <a href="index.html" class="footer-logo">🐾 Pets of GTA</a>
   <p class="footer-copy">&#169; 2026 Pets of GTA &middot; Made with love for animals</p>
   <div class="footer-links">
-    <a href="#">Privacy</a>
+    <a href="privacy.html">Privacy</a>
     <a href="#">Contact</a>
   </div>
 </footer>
@@ -241,4 +241,36 @@ function injectComponents() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', injectComponents);
+// Cookie / personalized-ads consent banner
+function initConsentBanner() {
+  let choice = null;
+  try { choice = localStorage.getItem('adConsent'); } catch (e) {}
+  if (choice === 'declined') {
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
+  }
+  if (choice) return;
+
+  const banner = document.createElement('div');
+  banner.className = 'consent-banner';
+  banner.setAttribute('role', 'region');
+  banner.setAttribute('aria-label', 'Cookie consent');
+  banner.innerHTML =
+    '<p>We use cookies to show ads (Google AdSense). You can allow personalized ads or choose non-personalized. ' +
+    '<a href="privacy.html">Privacy policy</a></p>' +
+    '<div class="consent-banner__actions">' +
+    '<button type="button" class="consent-banner__btn consent-banner__btn--ghost" data-choice="declined">Decline</button>' +
+    '<button type="button" class="consent-banner__btn" data-choice="accepted">Accept</button>' +
+    '</div>';
+  banner.addEventListener('click', e => {
+    const btn = e.target.closest('[data-choice]');
+    if (!btn) return;
+    try { localStorage.setItem('adConsent', btn.dataset.choice); } catch (err) {}
+    if (btn.dataset.choice === 'declined') {
+      (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
+    }
+    banner.remove();
+  });
+  document.body.appendChild(banner);
+}
+
+document.addEventListener('DOMContentLoaded', () => { injectComponents(); initConsentBanner(); });
